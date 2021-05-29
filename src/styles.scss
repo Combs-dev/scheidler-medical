@@ -1,1 +1,147 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  margin: 0 5%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: lighten(black, 15%);
+}
+
+h2 {
+  font-size: 2rem;
+  color: lighten(black, 20%);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: lighten(black, 25%);
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+// Navbar Styling
+.nav-info {
+  p {
+    margin: 0.75em 0 0 0;
+    padding: 0 1em;
+  }
+}
+
+nav.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  height: 60px;
+  position: relative;
+
+  a.nav-logo {
+    display: flex;
+  }
+
+  ul.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    list-style: none;
+    li.nav-item {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 0 1em;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 100;
+
+      a {
+        color: black;
+        text-decoration: none;
+
+        &:after {
+          display: block;
+          content: "";
+          border-bottom: solid 1px black;
+          transform: scaleX(0);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &.active {
+          color: lighten(black, 55%);
+          border-bottom: solid 1px black;
+        }
+
+        &:hover {
+          &:after {
+            transform: scaleX(1);
+          }
+
+          color: lighten(black, 55%);
+          transition: all ease 0.3s;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
+}
+
+// Section Styling
+section#homepage {
+  flex-direction: row;
+  text-align: center;
+
+  .stock-img {
+    height: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    h1 {
+      font-size: 2rem;
+      color: lighten(black, 15%);
+    }
+
+    h3 {
+      font-size: 1rem;
+      color: lighten(black, 25%);
+    }
+  }
+}
+
+section#background {
+  flex-direction: row;
+
+  .stock-img {
+    img {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+  }
+
+  section#services-grid {
+    flex-wrap: wrap;
+  }
+}

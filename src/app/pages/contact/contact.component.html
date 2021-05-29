@@ -1,0 +1,34 @@
+<div class="p-d-flex p-flex-column p-mt-5">
+  <section class="p-d-flex" id="contact">
+    <div class="p-sm-12 p-md-6 p-lg-6">
+      <h1>Contact Us Today</h1>
+
+      <h3>Hamilton</h3>
+      <p>543 Park Avenue Hamilton, OH, 45013</p>
+      <p>
+        Phone: <a href="tel:5137370257">(513) 737-0257</a> <br />
+        Fax: <a href="tel:5137373627">(513) 737-3627</a>
+      </p>
+      <h3>Middletown</h3>
+      <p>1537 S Breiel Blvd Middletown, OH 45044</p>
+      <p>
+        Phone: <a href="tel:5137370257">(513) 425-8300</a> <br />
+        Fax: <a href="tel:5137373627">(513) 999-9999</a>
+      </p>
+      <br />
+      <p>
+        Calling after hours? <br />
+        Use option 1 to contact on call staff (emergencies only) <br />
+        Use option 3 to leave a message (refills or appointments)
+      </p>
+    </div>
+    <div class="p-sm-12 p-md-6 p-lg-6">
+      <p-gmap
+        #gmap
+        [style]="{ width: '100%', height: '550px', 'margin-bottom': '1em' }"
+        [options]="options"
+        [overlays]="overlays"
+      ></p-gmap>
+    </div>
+  </section>
+</div>

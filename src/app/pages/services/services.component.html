@@ -1,0 +1,25 @@
+<div class="p-d-flex p-flex-column p-mt-5">
+  <section class="p-d-flex" id="services-intro">
+    <div class="p-col-12">
+      <h1>Our Services</h1>
+      <p>
+        Scheidler Medical Preferred is committed to providing personalized,
+        lifelong care for your entire family. Below are just a few of the common
+        medical services we make available to our patients.
+      </p>
+    </div>
+  </section>
+  <section class="p-grid" id="services-grid">
+    <ng-container *ngFor="let card of services">
+      <p-card
+        [header]="card.header"
+        [style]="{ height: '300px' }"
+        class="p-sm-12 p-md-4 p-lg-3"
+      >
+        <p>
+          {{ card.content }}
+        </p>
+      </p-card>
+    </ng-container>
+  </section>
+</div>
