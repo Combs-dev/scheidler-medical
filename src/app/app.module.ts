@@ -6,7 +6,7 @@ import { NavbarModule } from './components/navbar/navbar.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, NavbarModule],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule, NavbarModule],
   providers: [],
   bootstrap: [AppComponent],
 })
