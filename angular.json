@@ -143,16 +143,16 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "routes": [
-              "/"
-            ]
+            "routes": ["/"]
           },
           "configurations": {
             "production": {
-              "browserTarget": "scheidler-medical:build:production"
+              "browserTarget": "scheidler-medical:build:production",
+              "serverTarget": "scheidler-medical:server:production"
             },
             "development": {
-              "browserTarget": "scheidler-medical:build:development"
+              "browserTarget": "scheidler-medical:build:development",
+              "serverTarget": "scheidler-medical:server:development"
             }
           },
           "defaultConfiguration": "production"
