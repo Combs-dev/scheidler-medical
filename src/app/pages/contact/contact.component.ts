@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 declare var google: any;
 
@@ -7,7 +7,7 @@ declare var google: any;
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent implements OnInit, AfterViewInit {
   options: any;
 
   overlays: any[] = [];
@@ -16,7 +16,9 @@ export class ContactComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
+  ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
     this.options = {
       center: { lat: 39.473248086255985, lng: -84.45524832277957 },
       zoom: 11,
