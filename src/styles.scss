@@ -81,7 +81,6 @@ nav.navbar {
         }
 
         &.active {
-          color: lighten(black, 55%);
           border-bottom: solid 1px black;
         }
 
@@ -107,14 +106,6 @@ section#homepage {
   flex-direction: row;
   text-align: center;
 
-  .stock-img {
-    height: 50%;
-
-    img {
-      width: 100%;
-    }
-  }
-
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -122,12 +113,6 @@ section#homepage {
 
 section#background {
   flex-direction: row;
-
-  .stock-img {
-    img {
-      width: 50%;
-    }
-  }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
