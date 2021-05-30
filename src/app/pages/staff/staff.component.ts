@@ -26,29 +26,29 @@ export class StaffComponent implements OnInit {
 
   staff = [
     {
-      img: '',
+      img: '../../../assets/default-avatar.jpg',
       name: 'Stanley Scheidler, D.O.',
-      description: `Dr. Stan is a patient-focused primary care physician dedicated to serving his community's families.  He believes that everyone needs to be treated as a person, not as a number or a group.  He understands that a patient is a person who is a unique individual and who should be addressed in that manner.`,
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem orci, sollicitudin sit amet ex at, maximus ornare eros. Donec et mauris hendrerit, sollicitudin urna sit amet, sollicitudin elit. Maecenas ante magna, vehicula quis dolor vitae, pharetra varius quam. Sed et tincidunt nibh. Phasellus vitae egestas felis. Cras luctus a.`,
     },
     {
-      img: '',
+      img: '../../../assets/default-avatar.jpg',
       name: 'Joseph Scheidler, D.O.',
-      description: 'Visiting Orthopedic Surgeon',
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem orci, sollicitudin sit amet ex at, maximus ornare eros. Donec et mauris hendrerit, sollicitudin urna sit amet, sollicitudin elit. Maecenas ante magna, vehicula quis dolor vitae, pharetra varius quam. Sed et tincidunt nibh. Phasellus vitae egestas felis. Cras luctus a.`,
     },
     {
-      img: '',
+      img: '../../../assets/default-avatar.jpg',
       name: `Brianna O'Neill, Scribe`,
-      description: `Dr. Stan is a patient-focused primary care physician dedicated to serving his community's families.  He believes that everyone needs to be treated as a person, not as a number or a group.  He understands that a patient is a person who is a unique individual and who should be addressed in that manner.`,
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem orci, sollicitudin sit amet ex at, maximus ornare eros. Donec et mauris hendrerit, sollicitudin urna sit amet, sollicitudin elit. Maecenas ante magna, vehicula quis dolor vitae, pharetra varius quam. Sed et tincidunt nibh. Phasellus vitae egestas felis. Cras luctus a.`,
     },
     {
-      img: '',
+      img: '../../../assets/default-avatar.jpg',
       name: 'Stanley Scheidler, D.O.',
-      description: `Dr. Stan is a patient-focused primary care physician dedicated to serving his community's families.  He believes that everyone needs to be treated as a person, not as a number or a group.  He understands that a patient is a person who is a unique individual and who should be addressed in that manner.`,
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem orci, sollicitudin sit amet ex at, maximus ornare eros. Donec et mauris hendrerit, sollicitudin urna sit amet, sollicitudin elit. Maecenas ante magna, vehicula quis dolor vitae, pharetra varius quam. Sed et tincidunt nibh. Phasellus vitae egestas felis. Cras luctus a.`,
     },
     {
-      img: '',
+      img: '../../../assets/default-avatar.jpg',
       name: 'Stanley Scheidler, D.O.',
-      description: `Dr. Stan is a patient-focused primary care physician dedicated to serving his community's families.  He believes that everyone needs to be treated as a person, not as a number or a group.  He understands that a patient is a person who is a unique individual and who should be addressed in that manner.`,
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem orci, sollicitudin sit amet ex at, maximus ornare eros. Donec et mauris hendrerit, sollicitudin urna sit amet, sollicitudin elit. Maecenas ante magna, vehicula quis dolor vitae, pharetra varius quam. Sed et tincidunt nibh. Phasellus vitae egestas felis. Cras luctus a.`,
     },
   ];
 

@@ -1,18 +1,41 @@
 <div class="p-d-flex p-flex-column p-mt-5">
-  <section class="p-d-flex" id="contact">
-    <p-carousel
-      [value]="staff"
-      [numVisible]="3"
-      [numScroll]="1"
-      [circular]="true"
-      [responsiveOptions]="responsiveOptions"
-    >
-      <ng-template let-staff pTemplate="item">
-        <div class="staff-card">
-          <h3>{{ staff.name }}</h3>
-          <p>{{ staff.description }}</p>
-        </div>
-      </ng-template>
-    </p-carousel>
+  <section class="p-d-flex" id="services-intro">
+    <div class="p-col-12">
+      <h1>Meet our Staff</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem orci,
+        sollicitudin sit amet ex at, maximus ornare eros. Donec et mauris
+        hendrerit, sollicitudin urna sit amet, sollicitudin elit. Maecenas ante
+        magna, vehicula quis dolor vitae, pharetra varius quam. Sed et tincidunt
+        nibh. Phasellus vitae egestas felis. Cras luctus a.
+      </p>
+    </div>
+  </section>
+  <p-divider></p-divider>
+  <section class="p-d-flex" id="staff-carousel">
+    <div class="p-col-12">
+      <p-carousel
+        [value]="staff"
+        [numVisible]="3"
+        [numScroll]="1"
+        [circular]="true"
+        [responsiveOptions]="responsiveOptions"
+      >
+        <ng-template let-staff pTemplate="item">
+          <div class="staff-card p-shadow-3">
+            <div class="card-image p-mb-3">
+              <img [src]="staff.img" [alt]="staff.name" class="staff-image" />
+            </div>
+            <p-divider></p-divider>
+            <div class="card-header">
+              <h3>{{ staff.name }}</h3>
+            </div>
+            <div class="card-content">
+              <p>{{ staff.description }}</p>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
   </section>
 </div>

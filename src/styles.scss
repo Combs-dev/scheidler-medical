@@ -13,22 +13,22 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.25vw;
   color: lighten(black, 15%);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75vw;
   color: lighten(black, 20%);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25vw;
   color: lighten(black, 25%);
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1vw;
 }
 
 // Navbar Styling
@@ -65,6 +65,7 @@ nav.navbar {
       padding: 0 1em;
       cursor: pointer;
       text-decoration: none;
+      font-size: 1vw;
       font-weight: 100;
 
       a {
@@ -96,7 +97,7 @@ nav.navbar {
     }
   }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
@@ -114,17 +115,8 @@ section#homepage {
     }
   }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
-    h1 {
-      font-size: 2rem;
-      color: lighten(black, 15%);
-    }
-
-    h3 {
-      font-size: 1rem;
-      color: lighten(black, 25%);
-    }
   }
 }
 
@@ -137,11 +129,57 @@ section#background {
     }
   }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
+}
 
-  section#services-grid {
-    flex-wrap: wrap;
+section#contact {
+  h1 {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+section#services-grid {
+  transition: all 5s ease;
+
+  .p-card-title {
+    font-size: 1.5vw;
+  }
+}
+
+section#staff-carousel {
+  .staff-card {
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+    margin: 0 2.5%;
+
+    .card-image {
+      display: flex;
+      justify-content: center;
+
+      .staff-image {
+        width: 50%;
+        border-radius: 50%;
+        border: 1px solid black;
+      }
+    }
+
+    .card-header {
+      text-align: center;
+    }
+
+    .card-content {
+      margin: 0 5% 5% 5%;
+
+      p {
+        margin: 0;
+      }
+    }
   }
 }

@@ -12,6 +12,8 @@ export class ContactComponent implements OnInit {
 
   overlays: any[] = [];
 
+  infoWindow: any;
+
   constructor() {}
 
   ngOnInit() {
@@ -30,5 +32,14 @@ export class ContactComponent implements OnInit {
         title: 'Middletown Location',
       }),
     ];
+
+    this.infoWindow = new google.maps.InfoWindow();
+  }
+
+  handleOverlayClick(event: any) {
+    let title = event.overlay.getTitle();
+    this.infoWindow.setContent('' + title + '');
+    this.infoWindow.open(event.map, event.overlay);
+    event.map.setCenter(event.overlay.getPosition());
   }
 }
