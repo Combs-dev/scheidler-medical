@@ -15,26 +15,22 @@ body {
 }
 
 h1 {
-  font-size: 2.25vw;
+  font-size: calc(16px + 1.25vw);
   color: lighten(black, 15%);
 }
 
 h2 {
-  font-size: 1.75vw;
+  font-size: calc(16px + 0.75vw);
   color: lighten(black, 20%);
 }
 
 h3 {
-  font-size: 1.25vw;
+  font-size: calc(16px + 0.5vw);
   color: lighten(black, 25%);
 }
 
 p {
-  font-size: 1vw;
-}
-
-p-divider {
-  margin: 0 5%;
+  font-size: calc(12px + 0.25vw);
 }
 
 // Navbar Styling
@@ -73,7 +69,7 @@ nav.navbar {
       padding: 0 1em;
       cursor: pointer;
       text-decoration: none;
-      font-size: 1vw;
+      font-size: calc(12px + 0.25vw);
       font-weight: 100;
 
       a {
@@ -145,7 +141,9 @@ section#contact {
 }
 
 section#services-intro {
-  margin: 0 5%;
+  background-color: lighten(#2196f3, 35%);
+  padding: 0 2%;
+  margin-bottom: 2%;
 }
 
 section#services-grid {
@@ -162,7 +160,9 @@ section#story {
 }
 
 section#staff-intro {
-  margin: 0 5%;
+  background-color: lighten(#2196f3, 35%);
+  padding: 0 2%;
+  margin-bottom: 2%;
 }
 
 section#staff-carousel {
