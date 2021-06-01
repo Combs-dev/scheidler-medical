@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GMap } from 'primeng/gmap';
 
 declare var google: any;
 
@@ -8,6 +9,8 @@ declare var google: any;
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
+  @ViewChild('gmap') gmap: GMap | undefined;
+
   options: any;
 
   overlays: any[] = [];
@@ -41,5 +44,6 @@ export class ContactComponent implements OnInit {
     this.infoWindow.setContent('' + title + '');
     this.infoWindow.open(event.map, event.overlay);
     event.map.setCenter(event.overlay.getPosition());
+    this.gmap?.map.setZoom(16);
   }
 }

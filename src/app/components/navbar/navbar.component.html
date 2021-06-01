@@ -3,7 +3,13 @@
 </div>
 <nav class="navbar">
   <a class="nav-logo" href="#"></a>
-  <ul class="nav-list">
+  <i class="pi pi-bars" (click)="menuOpen = !menuOpen"></i>
+  <ul
+    class="nav-list"
+    [ngStyle]="{
+      height: isMobile ? (menuOpen ? '6rem' : '0') : 'auto'
+    }"
+  >
     <li class="nav-item">
       <a
         routerLink=""

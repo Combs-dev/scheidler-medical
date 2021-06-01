@@ -36,9 +36,11 @@ p {
 // Navbar Styling
 .nav-info {
   p {
-    margin: 0.75em 0 0 0;
     padding: 0 1em;
-    margin: 1% 5% 0 5%;
+    margin: 1% 5% 0 0;
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
   }
 }
 
@@ -50,18 +52,30 @@ nav.navbar {
   position: relative;
   margin: 0 5%;
 
+  i.pi.pi-bars {
+    width: 1rem;
+    margin: 2.5% 5% 2.5% auto;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
   a.nav-logo {
     display: flex;
   }
 
   ul.nav-list {
     display: flex;
+    overflow: hidden;
     justify-content: flex-end;
-    height: 100%;
+    height: 2rem;
+    width: 100%;
     padding: 0;
     margin: auto;
-    width: 100%;
     list-style: none;
+    transition: height 0.4s ease;
+
     li.nav-item {
       display: flex;
       align-items: center;
@@ -96,12 +110,43 @@ nav.navbar {
           color: lighten(black, 55%);
           transition: all ease 0.3s;
         }
+
+        @media screen and (max-width: 768px) {
+          color: lighten(black, 5%);
+
+          &:after {
+            display: block;
+            border-bottom: 0;
+            transform: none;
+          }
+
+          &:hover {
+            &:after {
+              transform: none;
+            }
+
+            color: inherit;
+            transition: none;
+          }
+        }
       }
+
+      @media screen and (max-width: 768px) {
+        margin: 2px 0;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      background-color: lighten(#2196f3, 5%);
     }
   }
 
   @media screen and (max-width: 768px) {
-    display: none;
+    height: auto;
+    flex-direction: column;
+    margin: 0;
   }
 }
 
@@ -144,15 +189,15 @@ section#services-intro {
   background-color: lighten(#2196f3, 35%);
   padding: 0 2%;
   margin-bottom: 2%;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 section#services-grid {
   margin: 0 5%;
   transition: all 5s ease;
-
-  .p-card-title {
-    font-size: 1.5vw;
-  }
 }
 
 section#story {
