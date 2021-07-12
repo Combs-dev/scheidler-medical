@@ -305,6 +305,7 @@ section#staff-carousel {
 
 section#vision {
   flex-direction: row;
+  padding: 2rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
