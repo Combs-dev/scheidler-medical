@@ -1,36 +1,94 @@
-$primary: #6c63ff;
+$primary: #2196f3;
+$secondary: rgb(251, 209, 54);
+$background: #fff;
 
 html,
-body {
-  font-family: Arial, Helvetica, sans-serif;
+body,
+app-root {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
-body {
+body,
+app-root {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   overflow-x: hidden;
   margin: 0;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 10vw 16px 10vw;
+  background-color: lighten(#000, 97.5%);
+
+  .footer_top {
+    display: flex;
+    flex-direction: row;
+
+    .footer_left,
+    .footer_middle,
+    .footer_right {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      text-align: center;
+
+      p {
+        font-size: calc(12px + 0.25vw);
+        margin: 8px 0 8px 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: flex;
+          flex-direction: row;
+
+          p {
+            flex: 1;
+          }
+        }
+      }
+    }
+
+    .footer_bottom {
+      display: flex;
+      flex-direction: column;
+
+      small {
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+}
+
 h1 {
   font-size: calc(16px + 1.25vw);
-  color: lighten(black, 15%);
+  color: lighten(#000, 15%);
 }
 
 h2 {
   font-size: calc(16px + 0.75vw);
-  color: lighten(black, 20%);
+  color: lighten(#000, 20%);
 }
 
 h3 {
   font-size: calc(16px + 0.5vw);
-  color: lighten(black, 25%);
+  color: lighten(#000, 25%);
 }
 
 p {
-  font-size: calc(12px + 0.25vw);
+  font-size: calc(16px + 0.25vw);
+  line-height: 150%;
 }
 
 // Navbar Styling
@@ -55,14 +113,14 @@ nav.navbar {
   i.pi.pi-bars {
     width: 1rem;
     margin: 2.5% 5% 2.5% auto;
-
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
   }
 
   a.nav-logo {
     display: flex;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   ul.nav-list {
@@ -85,21 +143,23 @@ nav.navbar {
       text-decoration: none;
       font-size: calc(12px + 0.25vw);
       font-weight: 100;
+      user-select: none;
 
       a {
-        color: black;
+        height: 100%;
+        color: #000;
         text-decoration: none;
 
         &:after {
           display: block;
           content: "";
-          border-bottom: solid 1px black;
+          border-bottom: solid 1px #000;
           transform: scaleX(0);
           transition: transform 0.3s ease-in-out;
         }
 
         &.active {
-          border-bottom: solid 1px black;
+          border-bottom: solid 1px #000;
         }
 
         &:hover {
@@ -107,12 +167,12 @@ nav.navbar {
             transform: scaleX(1);
           }
 
-          color: lighten(black, 55%);
+          color: lighten(#000, 55%);
           transition: all ease 0.3s;
         }
 
         @media screen and (max-width: 768px) {
-          color: lighten(black, 5%);
+          color: lighten(#000, 5%);
 
           &:after {
             display: block;
@@ -139,7 +199,7 @@ nav.navbar {
     @media screen and (max-width: 768px) {
       flex-direction: column;
       align-items: center;
-      background-color: lighten(#2196f3, 5%);
+      background-color: lighten($primary, 5%);
     }
   }
 
@@ -156,23 +216,24 @@ section#homepage {
   text-align: center;
   margin: 0 5%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
   }
 }
 
 section#background {
-  background-color: lighten(#2196f3, 35%);
+  background-color: lighten($primary, 15%);
   flex-direction: row;
   padding: 0 2%;
   margin: 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
   }
 }
 
 section#contact {
+  flex-wrap: wrap;
   padding: 0 2%;
   margin: 0 5%;
 
@@ -186,11 +247,11 @@ section#contact {
 }
 
 section#services-intro {
-  background-color: lighten(#2196f3, 35%);
+  background-color: lighten($primary, 15%);
   padding: 0 2%;
   margin-bottom: 2%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-top: 0;
   }
 }
@@ -205,7 +266,7 @@ section#story {
 }
 
 section#staff-intro {
-  background-color: lighten(#2196f3, 35%);
+  background-color: lighten($primary, 15%);
   padding: 0 2%;
   margin-bottom: 2%;
 }
@@ -224,7 +285,7 @@ section#staff-carousel {
       .staff-image {
         width: 50%;
         border-radius: 50%;
-        border: 1px solid black;
+        border: 1px solid #000;
       }
     }
 
@@ -239,5 +300,28 @@ section#staff-carousel {
         margin: 0;
       }
     }
+  }
+}
+
+section#vision {
+  flex-direction: row;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+section#values {
+  flex-direction: row;
+  background-color: lighten($primary, 15%);
+  padding: 2rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 }

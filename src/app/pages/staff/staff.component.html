@@ -3,11 +3,9 @@
     <div class="p-col-12">
       <h1>Meet our Staff</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem orci,
-        sollicitudin sit amet ex at, maximus ornare eros. Donec et mauris
-        hendrerit, sollicitudin urna sit amet, sollicitudin elit. Maecenas ante
-        magna, vehicula quis dolor vitae, pharetra varius quam. Sed et tincidunt
-        nibh. Phasellus vitae egestas felis. Cras luctus a.
+        Our physicians are compassionate, patient-oriented and trustworthy. You
+        will be treated as an individual. We will listen thoroughly to your
+        medical complaints and create a personal care plan that works for you.
       </p>
     </div>
   </section>
@@ -15,10 +13,9 @@
     <div class="p-col-12">
       <p-carousel
         [value]="staff"
-        [numVisible]="3"
+        [numVisible]="numVisible"
         [numScroll]="1"
-        [circular]="true"
-        [responsiveOptions]="responsiveOptions"
+        [circular]="false"
       >
         <ng-template let-staff pTemplate="item">
           <div class="staff-card p-shadow-3">
