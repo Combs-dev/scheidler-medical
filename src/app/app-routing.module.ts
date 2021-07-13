@@ -23,9 +23,11 @@ const routes: Routes = [
       import('./pages/contact/contact.module').then((m) => m.ContactModule),
   },
   {
-    path: 'forms',
+    path: 'counseling',
     loadChildren: () =>
-      import('./pages/forms/forms.module').then((m) => m.FormsModule),
+      import('./pages/counseling/counseling.module').then(
+        (m) => m.CounselingModule
+      ),
   },
   {
     path: '',

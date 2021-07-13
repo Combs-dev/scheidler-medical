@@ -7,7 +7,6 @@ body,
 app-root {
   height: 100%;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
 }
 
 body,
@@ -72,22 +71,22 @@ footer {
 }
 
 h1 {
-  font-size: calc(16px + 1.25vw);
-  color: lighten(#000, 15%);
+  font-size: calc(1em + 1.25vw);
+  color: lighten(#000, 5%);
 }
 
 h2 {
-  font-size: calc(16px + 0.75vw);
-  color: lighten(#000, 20%);
+  font-size: calc(1em + 0.75vw);
+  color: lighten(#000, 10%);
 }
 
 h3 {
-  font-size: calc(16px + 0.5vw);
-  color: lighten(#000, 25%);
+  font-size: calc(1em + 0.5vw);
+  color: lighten(#000, 15%);
 }
 
 p {
-  font-size: calc(16px + 0.25vw);
+  font-size: calc(1em + 0.25vw);
   line-height: 150%;
 }
 
@@ -216,6 +215,12 @@ section#homepage {
   text-align: center;
   margin: 0 5%;
 
+  .homepage_left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
@@ -248,7 +253,7 @@ section#contact {
 
 section#services-intro {
   background-color: lighten($primary, 15%);
-  padding: 0 2%;
+  padding: 0 2rem;
   margin-bottom: 2%;
 
   @media screen and (max-width: 767px) {
