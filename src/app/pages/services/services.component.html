@@ -13,7 +13,11 @@
     <ng-container *ngFor="let card of services">
       <p-card
         [header]="card.header"
-        [style]="{ 'min-height': '380px' }"
+        [style]="{
+          'min-height': '380px',
+          'box-shadow':
+            '0 2px 8px 0px rgb(0 0 0 / 20%), 0 1px 0px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%)'
+        }"
         class="p-sm-12 p-md-4 p-lg-3"
       >
         <p>

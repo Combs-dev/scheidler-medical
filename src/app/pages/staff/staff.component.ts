@@ -32,8 +32,8 @@ export class StaffComponent implements OnInit {
     },
     {
       img: '../../../assets/headshots/roberson.svg',
-      name: 'Chris Roberson, NP',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem orci, sollicitudin sit amet ex at, maximus ornare eros. Donec et mauris hendrerit, sollicitudin urna sit amet, sollicitudin elit. Maecenas ante magna, vehicula quis dolor vitae, pharetra varius quam. Sed et tincidunt nibh. Phasellus vitae egestas felis. Cras luctus a.`,
+      name: 'Chris Roberson, FNP',
+      description: `Chris Roberson is a Family Nurse Practitioner at Scheidler Medical Preferred, and partners closely with Dr. Stan Scheidler. Chris began his career in medicine as a combat medic in the Army. Afterwards, he attended Miami University, in Oxford, Ohio, where he received a Bachelor of Science Degree in Nursing. Chris then worked in the Cardiothoracic surgical intensive care unit, Emergency Room and Trauma Intensive Care Unit at Miami Valley Hospital.  He has also worked in the Retina department at Cincinnati Eye Institute.  While working full time, Chris finished his graduate degree at Spring Arbor University, located in Jackson, Michigan. Chris is a Certified Family Nurse Practitioner and licensed in Ohio. He is involved in the entire continuum of care of Dr. Scheidler’s patients.`,
     },
     {
       img: '../../../assets/headshots/mcmurray.svg',
