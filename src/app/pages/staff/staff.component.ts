@@ -28,22 +28,22 @@ export class StaffComponent implements OnInit {
     {
       img: '../../../assets/headshots/scheidler.svg',
       name: 'Stanley Scheidler, D.O.',
-      description: `Dr. Stan is a patient-focused primary care physician dedicated to serving his community's families.  He believes that everyone needs to be treated as a person, not as a number or a group.  He understands that a patient is a person who is a unique individual and who should be addressed in that manner.`,
+      description: `Dr. Stan is a patient-focused primary care physician dedicated to serving his community's families.  He believes that everyone needs to be treated as a person, not as a number or a group.  He understands that each patient is a unique individual and should be addressed in that manner. Dr. Scheidler was born and raised in Wyoming, Ohio. He recieved his medical degree from the Pikeville College School of Osteopathic Medicine.`,
     },
     {
       img: '../../../assets/headshots/roberson.svg',
       name: 'Chris Roberson, FNP',
-      description: `Chris Roberson is a Family Nurse Practitioner at Scheidler Medical Preferred, and partners closely with Dr. Stan Scheidler. Chris began his career in medicine as a combat medic in the Army. Afterwards, he attended Miami University, in Oxford, Ohio, where he received a Bachelor of Science Degree in Nursing. Chris then worked in the Cardiothoracic surgical intensive care unit, Emergency Room and Trauma Intensive Care Unit at Miami Valley Hospital.  He has also worked in the Retina department at Cincinnati Eye Institute.  While working full time, Chris finished his graduate degree at Spring Arbor University, located in Jackson, Michigan. Chris is a Certified Family Nurse Practitioner and licensed in Ohio. He is involved in the entire continuum of care of Dr. Scheidler’s patients.`,
+      description: `Chris Roberson is a certified Family Nurse Practitioner at Scheidler Medical Preferred. Chris began his career in medicine as a combat medic in the Army. He the received a Bachelor of Science Degree in Nursing from Miami University, in Oxford, Ohio. Chris then worked as a registered nurse at Miami Valley Hopsital. While working full time, Chris finished his graduate degree at Spring Arbor University, located in Jackson, Michigan. Chris works closley with Dr. Scheidler to ensure that each patient recieves the most comprehensive care possible.`,
     },
     {
       img: '../../../assets/headshots/mcmurray.svg',
       name: `Linda McMurray, LSW`,
-      description: `Hi, I’m Linda McMurray, a licensed independent social worker. I am certified in anxiety treatment (CCATP) and DBT (C-DBT) with experience in Adjusting to life changes, Anxiety, Depression, Grief, and PTSD. Working with veterans at the Dayton VA to working with children at Child Focus has offered me a variety of experiences. My focus is anxiety, depression, and grief working in Cognitive, Dialectic, and Solution Focused therapies. `,
+      description: `Linda McMurray is a licensed independent Social Worker. She is certified in anxiety treatment (CCATP) and DBT (C-DBT) with experience in adjusting to life changes, Anxiety, Depression, Grief, and PTSD. Linda has experience working with veterans at the Dayton Veter Affairs center and children at Child Focus. Given her experience, Linda is available to work with a wide variety of patients. Her focus is using Cognitive, Dialectic and Solution Focused thearpies to combat anxiety, depression, and grief.`,
     },
     {
       img: '../../../assets/headshots/gaitskill.svg',
       name: `Christian Gaitskill, MSW, LSW`,
-      description: `Christian has been a Licensed Social Worker for 4 years after having obtained her Master’s in Social Work from Northern Kentucky University. Christian’s primary focus is domestic violence and child abuse, but loves working with individuals experiencing anxiety, depression, and post-traumatic stress disorder among other common disorders. To get scheduled with Christian, please call 513-286-3043. `,
+      description: `Christian is a Licensed Social Worker. Four years ago, she obtained her Master’s degree in Social Work from Northern Kentucky University. Christian’s primary focus is in domestic violence and child abuse, but she enjoys working with a variety of individuals. She is available to work with anyone who is experiencing anxiety, depression, post-traumatic stress disorder and other common disorders.`,
     },
   ];
 

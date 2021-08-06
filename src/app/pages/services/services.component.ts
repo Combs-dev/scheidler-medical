@@ -45,7 +45,7 @@ export class ServicesComponent implements OnInit {
       content: `Treatments for Acne, Rosacea, Eczema, Psoriasis and other skin disorders`,
     },
     {
-      header: `Addiction`,
+      header: `Addiction Recovery`,
       content: `We provide individuals with the opportunity to take control of their recovery and life. We assist patients in the process of detox and long term recovery care for alcoholism and opiate addiction. We believe in holistic recovery and provide counseling on site.`,
     },
     {
