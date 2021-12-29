@@ -3,7 +3,8 @@
   "version": 1,
   "cli": {
     "cache": {
-      "environment": "all"
+      "enabled": false,
+      "environment": "local"
     }
   },
   "newProjectRoot": "projects",
