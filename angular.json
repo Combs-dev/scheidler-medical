@@ -4,7 +4,7 @@
   "cli": {
     "cache": {
       "enabled": false,
-      "environment": "local"
+      "environment": "all"
     }
   },
   "newProjectRoot": "projects",
