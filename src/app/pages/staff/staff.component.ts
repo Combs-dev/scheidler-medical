@@ -28,22 +28,39 @@ export class StaffComponent implements OnInit {
     {
       img: '../../../assets/headshots/scheidler.svg',
       name: 'Stanley Scheidler, D.O.',
-      description: `Dr. Stan is a patient-focused primary care physician dedicated to serving his community's families.  He believes that everyone needs to be treated as a person, not as a number or a group.  He understands that each patient is a unique individual and should be addressed in that manner. Dr. Scheidler was born and raised in Wyoming, Ohio. He recieved his medical degree from the Pikeville College School of Osteopathic Medicine.`,
+      description: `Dr. Scheidler is a patient-focused primary care physician dedicated to serving his community's families.
+      He believes that everyone needs to be treated as a person, not as a number or a group.
+      He understands that each patient is a unique individual and should be addressed in that manner.
+      Dr. Scheidler was born and raised in Wyoming, Ohio. For his undergraduate degree, he attended the University of Dayton where he played soccer.
+      He recieved his medical degree from the Pikeville College School of Osteopathic Medicine. Dr. Scheidler has been married to his wife Marla for thirty-seven years.
+      They have three daughters and twelve grandchildren. On the weekends, Dr. Scheidler enjoys hunting, fishing and spending time outdoors. `,
     },
     {
       img: '../../../assets/headshots/roberson.svg',
       name: 'Chris Roberson, FNP',
-      description: `Chris Roberson is a certified Family Nurse Practitioner at Scheidler Medical Preferred. Chris began his career in medicine as a combat medic in the Army. He the received a Bachelor of Science Degree in Nursing from Miami University, in Oxford, Ohio. Chris then worked as a registered nurse at Miami Valley Hopsital. While working full time, Chris finished his graduate degree at Spring Arbor University, located in Jackson, Michigan. Chris works closley with Dr. Scheidler to ensure that each patient recieves the most comprehensive care possible.`,
+      description: `Chris Roberson is a certified Family Nurse Practitioner at Scheidler Medical Preferred.
+      Chris began his career in medicine as a combat medic in the Army. He received his Bachelor of Science in Nursing from Miami University.
+      Chris then worked as a registered nurse at Miami Valley Hopsital and the Cincinnati Eye Institute.
+      While working full time, Chris finished his graduate degree at Spring Arbor University.
+      Chris works closley with Dr. Scheidler to ensure that each patient recieves individualized and comprehensive care.`,
     },
     {
-      img: '../../../assets/headshots/mcmurray.svg',
-      name: `Linda McMurray, LSW`,
-      description: `Linda McMurray is a licensed independent Social Worker. She is certified in anxiety treatment (CCATP) and DBT (C-DBT) with experience in adjusting to life changes, Anxiety, Depression, Grief, and PTSD. Linda has experience working with veterans at the Dayton Veter Affairs center and children at Child Focus. Given her experience, Linda is available to work with a wide variety of patients. Her focus is using Cognitive, Dialectic and Solution Focused thearpies to combat anxiety, depression, and grief.`,
+      img: '../../../assets/default-avatar.jpg',
+      name: `Anitra Niece, FNP`,
+      description: `Anitra Niece is a certified Family Nurse Practioner at Schediler Medical Preferred. Anitra is local to the area as she grew up in Ross.
+      She received her Bachelor of Science in Nursing from Ohio University. As a registered nurse, Anitra worked in the intensive care unit and the operating room.
+      In 2021, she completed her graduate degree at Northern Kentucky University and earned her licensure as a Family Nurse Practioner.
+      Anitra has been married to her husband for twenty-three years and has three daughters. In her free time she enjoys reading, traveling and being outdoors. Anitra works
+      alongside Dr. Scheidler to provide high-quality care to each patient.`,
     },
     {
-      img: '../../../assets/headshots/gaitskill.svg',
-      name: `Christian Gaitskill, MSW, LSW`,
-      description: `Christian is a Licensed Social Worker. Four years ago, she obtained her Master’s degree in Social Work from Northern Kentucky University. Christian’s primary focus is in domestic violence and child abuse, but she enjoys working with a variety of individuals. She is available to work with anyone who is experiencing anxiety, depression, post-traumatic stress disorder and other common disorders.`,
+      img: '../../../assets/default-avatar.jpg',
+      name: 'Natalie Boyd, Office Manager',
+      description: `Natalie Boyd is the office manager at Scheidler Medical Preferred. She ensures that the office runs smoothly both clincally and administratively.
+      Natalie was born and raised in Hamilton. She began her career in the medical field by earning her STNA and later her LPN from Butler Tech.
+      From there, she worked in the labor and delivery unit at UC hospital. Natalie also spent two years working in the insurance verification department for the Drake center.
+      Before joining Scheidler Medical Preferred, she managed a hospice facility for six years. Natalie is happily married to her junior high sweetheart and has five children.
+      She enjoys spending time with her Tennesse Walking Horse named Ginger and supporting the UC Bearcats sports teams.`,
     },
   ];
 
