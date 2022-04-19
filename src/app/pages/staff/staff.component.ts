@@ -36,15 +36,6 @@ export class StaffComponent implements OnInit {
       They have three daughters and twelve grandchildren. On the weekends, Dr. Scheidler enjoys hunting, fishing and spending time outdoors. `,
     },
     {
-      img: '../../../assets/headshots/roberson.svg',
-      name: 'Chris Roberson, FNP',
-      description: `Chris Roberson is a certified Family Nurse Practitioner at Scheidler Medical Preferred.
-      Chris began his career in medicine as a combat medic in the Army. He received his Bachelor of Science in Nursing from Miami University.
-      Chris then worked as a registered nurse at Miami Valley Hopsital and the Cincinnati Eye Institute.
-      While working full time, Chris finished his graduate degree at Spring Arbor University.
-      Chris works closley with Dr. Scheidler to ensure that each patient recieves individualized and comprehensive care.`,
-    },
-    {
       img: '../../../assets/default-avatar.jpg',
       name: `Anitra Niece, FNP`,
       description: `Anitra Niece is a certified Family Nurse Practioner at Schediler Medical Preferred. Anitra is local to the area as she grew up in Ross.
