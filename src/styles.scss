@@ -139,6 +139,7 @@ nav.navbar {
     li.nav-item {
       display: flex;
       align-items: center;
+      justify-content: center;
       text-align: center;
       padding: 0 1em;
       cursor: pointer;
@@ -148,7 +149,6 @@ nav.navbar {
       user-select: none;
 
       a {
-        height: 100%;
         color: #000;
         text-decoration: none;
 
@@ -194,7 +194,9 @@ nav.navbar {
       }
 
       @media screen and (max-width: 768px) {
-        margin: 2px 0;
+        height: 100%;
+        width: 100%;
+        margin: 0.32rem auto;
       }
     }
 

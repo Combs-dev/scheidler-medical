@@ -13,9 +13,9 @@
     </div>
   </section>
   <section class="p-grid p-ai-strech" id="services-grid">
-    <ng-container *ngFor="let card of services">
+    <ng-container *ngFor="let service of services">
       <p-card
-        [header]="card.header"
+        [header]="service.name"
         [style]="{
           'min-height': '100%',
           'box-shadow':
@@ -24,7 +24,7 @@
         class="p-sm-12 p-md-4 p-lg-3"
       >
         <p>
-          {{ card.content }}
+          {{ service.description }}
         </p>
       </p-card>
     </ng-container>
