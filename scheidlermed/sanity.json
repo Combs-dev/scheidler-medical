@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "Scheidler_Med"
+    "name": "Scheidler_Med",
+    "basePath": "/studio"
   },
   "api": {
     "projectId": "vfh8d0hi",
