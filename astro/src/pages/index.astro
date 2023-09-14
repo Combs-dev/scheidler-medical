@@ -1,0 +1,81 @@
+---
+import Hero from '../components/Hero.astro'
+import Layout from '../layouts/Layout.astro'
+import { getAllServices } from '../lib/api'
+
+const services: { _id: string; name: string; description: string }[] = await getAllServices()
+                                // <div class="flex items-center gap-1 cursor-pointer text-blue-600 transition-transform" id="service-card-link">Learn More 
+                                //     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                //       <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                                //     </svg>
+                                // </div>
+---
+
+<Layout title="Scheidler Medical">
+    <main class="grid">
+        <Hero />
+        <section class="snap-y">
+            <div class="grid lg:grid-cols-2 gap-y-4 sm:gap-y-0 bg-gradient-to-r from-sky-500 to-indigo-600 px-4 py-8 sm:p-12">
+                <div class="flex justify-center items-center">
+                    <img src="/doctor.svg" alt="Doctor caring for patient" height={800} width={800} />
+                </div>
+                <div class="flex flex-col p-4 sm:p-12 gap-y-8 sm:gap-y-12">
+                    <div>
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-50 sm:text-4xl">
+                            Accepting New Patients
+                        </h2>
+                        <p class="mt-6 text-lg leading-8 text-gray-100">
+                            Scheidler Medical Preferred offers comprehensive primary care services for the entire
+                            family, including preventative care, minor surgery, and acute illness care. Our scheduling
+                            services typically allow you to make an appointment within a few days.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Care Stands Out</h2>
+                        <p class="mt-6 text-lg leading-8 text-gray-100">
+                            We want to solve and treat our patient’s medical ailments whether they be physical or
+                            mental. Our primary advantage is that we offer comprehensive medical care. Most primary care
+                            physicians refer out for many of the services we offer. Our core services include primary
+                            care, addiction treatment, geriatrics, weight loss, minor surgeries, XRAY, osteopathic
+                            manipulative treatment, medical spa, counseling services, and blood testing on-site.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="snap-y">
+            <div class="flex flex-col items-center gap-y-12 px-6 sm:px-12 py-4 sm:py-20">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Services</h2>
+                    <p class="mt-6 text-lg leading-8 text-gray-600 max-w-3xl text-center">
+                        Scheidler Medical Preferred is committed to providing personalized, lifelong care for your
+                        entire family. Below are just a few of the common medical services we make available to our
+                        patients.
+                    </p>
+                </div>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-8 [&>*:nth-child(odd)]:bg-yellow-100 [&>*:nth-child(odd)]:text-yellow-900 [&>*:nth-child(even)]:bg-green-100 [&>*:nth-child(even)]:text-green-900"
+                >
+                    {
+                        services.map((service) => (
+                            <div class="flex flex-col justify-around items-center h-48 w-80 sm:w-56 xl:w-72 shadow-md rounded-xl p-8" transition:name="service-card">
+                                <h3 class="text-lg font-semibold tracking-tight text-center">
+                                    {service.name}
+                                </h3>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
+<script>
+const serviceCardButtons = document.querySelectorAll("#service-card-link")
+
+serviceCardButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        
+    })
+})
+</script>
