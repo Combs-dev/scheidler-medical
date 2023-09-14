@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@sanity/vision':
     specifier: ^3.0.0
@@ -1875,7 +1879,7 @@ packages:
       react-dom: ^18
     dependencies:
       '@sanity/generate-help-url': 3.0.0
-      '@vitejs/plugin-react': 2.2.0(vite@3.2.5)
+      '@vitejs/plugin-react': 2.2.0(vite@3.2.7)
       chalk: 4.1.2
       chokidar: 3.5.3
       connect-history-api-fallback: 1.6.0
@@ -1888,7 +1892,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       read-pkg-up: 7.0.1
       resolve-from: 5.0.0
-      vite: 3.2.5
+      vite: 3.2.7
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -2325,7 +2329,7 @@ packages:
       - '@codemirror/search'
     dev: false
 
-  /@vitejs/plugin-react@2.2.0(vite@3.2.5):
+  /@vitejs/plugin-react@2.2.0(vite@3.2.7):
     resolution: {integrity: sha512-FFpefhvExd1toVRlokZgxgy2JtnBOdp4ZDsq7ldCWaqGSGn9UhWMAVm/1lxPL14JfNS5yGz+s9yFrQY6shoStA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2338,7 +2342,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6(@babel/core@7.21.4)
       magic-string: 0.26.7
       react-refresh: 0.14.0
-      vite: 3.2.5
+      vite: 3.2.7
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -6731,8 +6735,8 @@ packages:
     resolution: {integrity: sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw==}
     dev: false
 
-  /vite@3.2.5:
-    resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
+  /vite@3.2.7:
+    resolution: {integrity: sha512-29pdXjk49xAP0QBr0xXqu2s5jiQIXNvE/xwd0vUizYT2Hzqe4BksNNoWllFVXJf4eLZ+UlVQmXfB4lWrc+t18g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
