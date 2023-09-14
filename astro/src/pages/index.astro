@@ -4,11 +4,11 @@ import Layout from '../layouts/Layout.astro'
 import { getAllServices } from '../lib/api'
 
 const services: { _id: string; name: string; description: string }[] = await getAllServices()
-                                // <div class="flex items-center gap-1 cursor-pointer text-blue-600 transition-transform" id="service-card-link">Learn More 
-                                //     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                                //       <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z" clip-rule="evenodd" />
-                                //     </svg>
-                                // </div>
+// <div class="flex items-center gap-1 cursor-pointer text-blue-600 transition-transform" id="service-card-link">Learn More 
+//     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+//       <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z" clip-rule="evenodd" />
+//     </svg>
+// </div>
 ---
 
 <Layout title="Scheidler Medical">
@@ -16,7 +16,7 @@ const services: { _id: string; name: string; description: string }[] = await get
         <Hero />
         <section class="snap-y">
             <div class="grid lg:grid-cols-2 gap-y-4 sm:gap-y-0 bg-gradient-to-r from-sky-500 to-indigo-600 px-4 py-8 sm:p-12">
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center w-full sm:w-auto">
                     <img src="/doctor.svg" alt="Doctor caring for patient" height={800} width={800} />
                 </div>
                 <div class="flex flex-col p-4 sm:p-12 gap-y-8 sm:gap-y-12">
@@ -57,13 +57,13 @@ const services: { _id: string; name: string; description: string }[] = await get
                     class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-8 [&>*:nth-child(odd)]:bg-yellow-100 [&>*:nth-child(odd)]:text-yellow-900 [&>*:nth-child(even)]:bg-green-100 [&>*:nth-child(even)]:text-green-900"
                 >
                     {
-                        services.map((service) => (
-                            <div class="flex flex-col justify-around items-center h-48 w-80 sm:w-56 xl:w-72 shadow-md rounded-xl p-8" transition:name="service-card">
-                                <h3 class="text-lg font-semibold tracking-tight text-center">
-                                    {service.name}
-                                </h3>
-                            </div>
-                        ))
+                    services.map((service) => (
+                        <div class="flex flex-col justify-around items-center h-24 w-80 sm:w-56 xl:w-72 shadow-md rounded-xl p-8" transition:name="service-card">
+                            <h3 class="text-lg font-semibold tracking-tight text-center">
+                                {service.name}
+                            </h3>
+                        </div>
+                    ))
                     }
                 </div>
             </div>
@@ -75,7 +75,7 @@ const serviceCardButtons = document.querySelectorAll("#service-card-link")
 
 serviceCardButtons.forEach((button) => {
     button.addEventListener('click', () => {
-        
+
     })
 })
 </script>

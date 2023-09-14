@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const formsToFill = [
+    {
+        name: "Welcome to the Practice",
+        path: "/forms/welcome.pdf"
+    },
+    {
+        name: "Initial History & Physical",
+        path: "/forms/clinical-and-physical.pdf"
+    },
+    {
+        name: "Patient Registration",
+        path: "/forms/registration.pdf"
+    }
+] 
+
+const formsToRead = [
+    {
+        name: "Notice of Privacy Practices",
+        path: "/forms/npp-english.pdf"
+    },
+    {
+        name: "Notice of Privacy Practices (Spanish)",
+        path: "/forms/npp-spanish.pdf"
+    }
+]
+
+const additionalForms = [
+    {
+        name: "DEXA Scan",
+        path: "/forms/dexa.pdf"
+    }
+]
+---
+
+<Layout title="Forms">
+    <main class="min-h-screen py-36 sm:py-48">
+        <div class="mx-auto grid gap-y-20 max-w-6xl px-8 sm:px-24">
+            <div class="max-w-2xl">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Patient Forms</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-600">
+                    To help speed up the check-in process for new patients we have provided the necessary forms for you to review and fill out before your appointment
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-3 gap-5">
+                <div>
+                    <h3 class="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">Forms to fill out</h3>
+                    <ul>
+                        {
+                        formsToFill.map((form) => 
+                            (
+                                <li>
+                                    <a class="flex items-center text-blue-600" href={form.path} download>
+                                        {form.name}
+                                    </a> 
+                                </li>
+                            )    
+                        )
+                        }
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">Forms to review</h3>
+                    <ul>
+                        {
+                        formsToRead.map((form) => 
+                            (
+                                <li>
+                                    <a class="flex items-center text-blue-600" href={form.path} download>
+                                        {form.name}
+                                    </a> 
+                                </li>
+                            )    
+                        )
+                        }
+
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold tracking-tight text-gray-700 sm:text-2xl">Additional Information</h3>
+                    <ul>
+                        {
+                        additionalForms.map((form) => 
+                            (
+                                <li>
+                                    <a class="flex items-center text-blue-600" href={form.path} download>
+                                        {form.name}
+                                    </a> 
+                                </li>
+                            )    
+                        )
+                        }
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>    
+</Layout>
