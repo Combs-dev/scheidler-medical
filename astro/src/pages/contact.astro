@@ -26,7 +26,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
                 <div class="flex flex-col gap-6">
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Hours</h2>
-                    <div class="columns-2">
+                    <div class="grid grid-cols-2">
                         <ul>
                             <li>
                                 Monday
@@ -58,7 +58,7 @@ import Layout from '../layouts/Layout.astro';
                                 8:00am - 4:30pm
                             </li>
                             <li>
-                                8:00am - 4:30pm (No Appointments) 
+                                8:00am - 4:30pm<span class="text-red-500">*</span>
                             </li>
                             <li>
                                 8:00am - 4:30pm
@@ -73,6 +73,10 @@ import Layout from '../layouts/Layout.astro';
                                 Closed
                             </li>
                         </ul>
+                    </div>
+                    <div>
+                        <span class="text-red-500">*</span>
+                        There will be no appointments these days
                     </div>
                     <div class="font-semibold italic">
                         Are your weekdays too busy? We offer Saturday appointments on a limited basis.
